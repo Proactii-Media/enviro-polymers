@@ -60,12 +60,12 @@ const Footer = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.6, ease: "easeOut" as const },
     },
   };
 
   return (
-    <footer className="relative overflow-hidden">
+    <footer className="relative overflow-hidden" id="main-footer">
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <div

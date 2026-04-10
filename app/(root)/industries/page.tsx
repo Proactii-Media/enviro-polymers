@@ -169,11 +169,12 @@ export default function IndustriesPage() {
           className="absolute inset-0"
         >
           <Image
-            src="/industries/industriesImg.webp"
+            src="/industriesImg.jpg"
             alt="Industries"
             fill
             className="object-cover"
             priority
+            sizes="100vw"
           />
         </motion.div>
 

@@ -73,13 +73,13 @@ export default function ClientsPage() {
   ];
 
   const categories = [
-    { id: "all", label: "All", icon: "🌍" },
-    { id: "pharmaceutical", label: "Pharma", icon: "💊" },
-    { id: "dairy", label: "Dairy", icon: "🥛" },
-    { id: "textile", label: "Textile", icon: "👕" },
-    { id: "manufacturing", label: "Mfg", icon: "🏭" },
-    { id: "fmcg", label: "FMCG", icon: "🧼" },
-    { id: "agricultural", label: "Agri", icon: "🌾" },
+    { id: "all", label: "All" },
+    { id: "pharmaceutical", label: "Pharma" },
+    { id: "dairy", label: "Dairy" },
+    { id: "textile", label: "Textile" },
+    { id: "manufacturing", label: "Mfg" },
+    { id: "fmcg", label: "FMCG" },
+    { id: "agricultural", label: "Agri" },
   ];
 
   const filteredClients =
@@ -103,7 +103,7 @@ export default function ClientsPage() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
+      transition: { duration: 0.8, ease: "easeOut" as const },
     },
   };
 
@@ -193,7 +193,7 @@ export default function ClientsPage() {
                 : "border border-[#588157]/40 hover:border-[#588157]"
             }`}
           >
-            {cat.icon} {cat.label}
+            {cat.label}
           </button>
         ))}
       </div>

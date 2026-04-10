@@ -103,7 +103,7 @@ const Hero = () => {
             animate={{ scale: 1.08 }}
             transition={{
               duration: 10,
-              ease: "easeInOut",
+              ease: "easeInOut" as const,
               repeat: Infinity,
               repeatType: "reverse",
             }}

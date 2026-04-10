@@ -62,7 +62,7 @@ export default function ContactPage() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.6, ease: "easeOut" as const },
     },
   };
 
@@ -163,7 +163,11 @@ export default function ContactPage() {
               "65% 35% 45% 55%",
             ],
           }}
-          transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
+          transition={{
+            duration: 22,
+            repeat: Infinity,
+            ease: "easeInOut" as const,
+          }}
           className="absolute -top-60 -right-40 w-[600px] h-[600px]"
           style={{
             background:
@@ -187,7 +191,7 @@ export default function ContactPage() {
           transition={{
             duration: 26,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: "easeInOut" as const,
             delay: 1,
           }}
           className="absolute -bottom-80 -left-60 w-[700px] h-[700px]"
@@ -213,7 +217,7 @@ export default function ContactPage() {
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: "easeInOut" as const,
             delay: 3,
           }}
           className="absolute top-1/2 right-0 w-[450px] h-[450px]"
@@ -239,7 +243,7 @@ export default function ContactPage() {
           transition={{
             duration: 24,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: "easeInOut" as const,
             delay: 2,
           }}
           className="absolute top-1/4 -left-48 w-[500px] h-[500px]"
@@ -260,7 +264,7 @@ export default function ContactPage() {
           transition={{
             duration: 18,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: "easeInOut" as const,
             delay: 4,
           }}
           className="absolute top-0 left-1/3 w-80 h-80"
@@ -327,7 +331,7 @@ export default function ContactPage() {
               duration: 25 + Math.random() * 25,
               repeat: Infinity,
               delay: i * 0.25,
-              ease: "easeInOut",
+              ease: "easeInOut" as const,
             }}
           />
         ))}
@@ -355,7 +359,11 @@ export default function ContactPage() {
                 "M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,144C672,139,768,149,864,154.7C960,160,1056,160,1152,154.7C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z",
               ],
             }}
-            transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              ease: "easeInOut" as const,
+            }}
           />
         </motion.svg>
 
@@ -404,7 +412,7 @@ export default function ContactPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 py-24 md:py-32 overflow-hidden"
+        className="relative z-10 py-16 md:py-20 overflow-hidden"
       >
         {/* Industrial hero background */}
         <div className="absolute inset-0">
@@ -416,240 +424,9 @@ export default function ContactPage() {
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-slate-950/70" />
-          <div className="absolute inset-0 bg-linear-to-b from-slate-950/25 via-slate-950/65 to-slate-950/90" />
+          <div className="absolute inset-0 bg-slate-900/70" />
           <div className="absolute inset-0 opacity-20 [background:radial-gradient(circle_at_25%_25%,rgba(16,185,129,0.35),transparent_45%)]" />
         </div>
-
-        {/* Decorative Background SVG Pattern */}
-        <div className="absolute inset-0 opacity-15 overflow-hidden">
-          <svg
-            viewBox="0 0 1440 800"
-            className="w-full h-full"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice"
-          >
-            {/* Decorative leaves */}
-            <defs>
-              <linearGradient
-                id="heroLeaf1"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-              >
-                <stop offset="0%" stopColor="#a3b18a" />
-                <stop offset="100%" stopColor="#588157" />
-              </linearGradient>
-              <linearGradient
-                id="heroLeaf2"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-              >
-                <stop offset="0%" stopColor="#dceef0" />
-                <stop offset="100%" stopColor="#a3b18a" />
-              </linearGradient>
-              <filter id="heroBlur">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
-              </filter>
-            </defs>
-
-            {/* Top Right Leaf */}
-            <g opacity="0.3" filter="url(#heroBlur)">
-              <path
-                d="M1200 50C1220 65, 1250 80, 1260 110C1270 140, 1250 170, 1220 180C1190 190, 1160 180, 1150 150C1140 120, 1185 65, 1200 50Z"
-                fill="url(#heroLeaf1)"
-              />
-              <path
-                d="M1200 55L1205 120L1200 175"
-                stroke="#ffffff"
-                strokeWidth="2"
-                opacity="0.6"
-              />
-            </g>
-
-            {/* Bottom Left Leaf */}
-            <g opacity="0.25" filter="url(#heroBlur)">
-              <path
-                d="M100 650C120 665, 150 680, 160 710C170 740, 150 770, 120 780C90 790, 60 780, 50 750C40 720, 85 665, 100 650Z"
-                fill="url(#heroLeaf2)"
-              />
-              <path
-                d="M100 655L105 720L100 775"
-                stroke="#ffffff"
-                strokeWidth="2"
-                opacity="0.5"
-              />
-            </g>
-
-            {/* Circles and geometric elements */}
-            <circle
-              cx="200"
-              cy="150"
-              r="80"
-              fill="none"
-              stroke="#a3b18a"
-              strokeWidth="1"
-              opacity="0.15"
-            />
-            <circle
-              cx="200"
-              cy="150"
-              r="50"
-              fill="none"
-              stroke="#a3b18a"
-              strokeWidth="1"
-              opacity="0.1"
-            />
-
-            <circle
-              cx="1300"
-              cy="700"
-              r="100"
-              fill="none"
-              stroke="#a3b18a"
-              strokeWidth="1"
-              opacity="0.12"
-            />
-            <circle
-              cx="1300"
-              cy="700"
-              r="60"
-              fill="none"
-              stroke="#a3b18a"
-              strokeWidth="1"
-              opacity="0.08"
-            />
-
-            {/* Decorative dots */}
-            {[...Array(8)].map((_, i) => (
-              <circle
-                key={i}
-                cx={150 + i * 160}
-                cy={100 + (i % 2) * 600}
-                r="3"
-                fill="#a3b18a"
-                opacity="0.2"
-              />
-            ))}
-          </svg>
-        </div>
-
-        {/* Animated Contact Icons Background */}
-        {/* Top Left - Phone Icon */}
-        <motion.div
-          animate={{
-            y: [0, 30, 0],
-            x: [0, 20, 0],
-            rotate: [0, 15, 0],
-            scale: [1, 1.1, 1],
-          }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-10 left-10 opacity-10 z-0"
-        >
-          <Phone size={120} color="#ffffff" strokeWidth={1.5} />
-        </motion.div>
-
-        {/* Top Right - Mail Icon */}
-        <motion.div
-          animate={{
-            y: [0, -30, 0],
-            x: [0, -20, 0],
-            rotate: [0, -15, 0],
-            scale: [1, 1.15, 1],
-          }}
-          transition={{
-            duration: 9,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 1,
-          }}
-          className="absolute top-20 right-20 opacity-8 z-0"
-        >
-          <Mail size={140} color="#a3b18a" strokeWidth={1.5} />
-        </motion.div>
-
-        {/* Bottom Left - Mail Icon */}
-        <motion.div
-          animate={{
-            y: [0, 40, 0],
-            x: [0, -30, 0],
-            rotate: [0, 20, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 2,
-          }}
-          className="absolute bottom-20 left-20 opacity-7 z-0"
-        >
-          <Mail size={160} color="#ffffff" strokeWidth={1} />
-        </motion.div>
-
-        {/* Bottom Right - Phone Icon */}
-        <motion.div
-          animate={{
-            y: [0, -40, 0],
-            x: [0, 30, 0],
-            rotate: [0, -20, 0],
-            scale: [1, 1.1, 1],
-          }}
-          transition={{
-            duration: 11,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: 3,
-          }}
-          className="absolute bottom-32 right-10 opacity-9 z-0"
-        >
-          <Phone size={130} color="#a3b18a" strokeWidth={1.5} />
-        </motion.div>
-
-        {/* Center - Large Phone Icon */}
-        <motion.div
-          animate={{
-            scale: [1, 1.05, 1],
-            opacity: [0.04, 0.08, 0.04],
-            rotate: [0, 5, 0],
-          }}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"
-        >
-          <Phone size={300} color="#ffffff" strokeWidth={0.8} />
-        </motion.div>
-
-        {/* Animated floating elements */}
-        <motion.div
-          animate={{
-            y: [0, -20, 0],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{ duration: 6, repeat: Infinity }}
-          className="absolute top-20 right-20 w-32 h-32 rounded-full"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%)",
-            filter: "blur(30px)",
-          }}
-        />
-
-        <motion.div
-          animate={{
-            y: [0, 20, 0],
-            opacity: [0.2, 0.4, 0.2],
-          }}
-          transition={{ duration: 7, repeat: Infinity, delay: 1 }}
-          className="absolute bottom-32 left-20 w-40 h-40 rounded-full"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%)",
-            filter: "blur(40px)",
-          }}
-        />
 
         {/* Content */}
         <div className="relative z-10 px-4 py-16 md:py-24">

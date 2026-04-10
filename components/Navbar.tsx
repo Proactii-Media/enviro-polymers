@@ -69,7 +69,7 @@ const Navbar = () => {
       className="absolute bottom-0 left-0 right-0 h-0.5 bg-green-600 origin-left"
       initial={{ scaleX: 0 }}
       animate={{ scaleX: isActive ? 1 : 0 }}
-      transition={{ duration: 0.3, ease: "easeInOut" }}
+      transition={{ duration: 0.3, ease: "easeInOut" as const }}
     />
   );
 
@@ -107,10 +107,10 @@ const Navbar = () => {
                 <Image
                   src="/Enviro polymers-01.svg"
                   alt="Enviro Polymers"
-                  width={44}
-                  height={44}
+                  width={64}
+                  height={64}
                   priority
-                  className="h-9 w-9 sm:h-11 sm:w-11 object-contain"
+                  className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 object-contain"
                 />
               </motion.div>
               {/* Logo text - visible on all screen sizes */}
