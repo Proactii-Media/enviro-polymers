@@ -98,7 +98,11 @@ const WhyChooseUs = ({
     visible: {
       opacity: 1,
       y: 0,
+<<<<<<< HEAD
       transition: { duration: 0.6, ease: "easeOut" as const },
+=======
+      transition: { duration: 0.6, ease: "easeOut" as const},
+>>>>>>> e7f8bc4470d4c9f159c4913303f91bd7949b869d
     },
   };
 
