@@ -42,7 +42,7 @@ export default function PolymerPage() {
             className="absolute inset-0"
           >
             <Image
-              src="/granules.webp"
+              src="/services/plastic.jpg"
               alt="Plastic Raw Material"
               fill
               className="object-cover"
