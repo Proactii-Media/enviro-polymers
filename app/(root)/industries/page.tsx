@@ -16,7 +16,7 @@ export const industries = [
       "Medical packaging waste",
     ],
     color: "#588157",
-    imageUrl: "/industries/pharmaceutical-scrap.webp",
+    imageUrl: "/industries/pharmaceutical-scrap.jpg",
   },
   {
     title: "Textile & Garment",
@@ -29,7 +29,7 @@ export const industries = [
       "Packaging materials",
     ],
     color: "#3a5a40",
-    imageUrl: "/industries/textile-scrap.webp",
+    imageUrl: "/industries/textile-scrap.jpg",
   },
   {
     title: "Paint & Coating",
@@ -42,7 +42,7 @@ export const industries = [
       "Contaminated drum cleaning",
     ],
     color: "#344e41",
-    imageUrl: "/industries/paint-scrap.webp",
+    imageUrl: "/industries/paint-scrap.jpg",
   },
   {
     title: "Electronics & Electrical",
@@ -55,7 +55,7 @@ export const industries = [
       "Production line waste",
     ],
     color: "#588157",
-    imageUrl: "/industries/electronics-scrap.webp",
+    imageUrl: "/industries/electronics-scrap.jpg",
   },
   {
     title: "Automotive & Manufacturing",
@@ -68,7 +68,7 @@ export const industries = [
       "Production line scrap",
     ],
     color: "#3a5a40",
-    imageUrl: "/industries/automotive-scrap.webp",
+    imageUrl: "/industries/automotive-scrap.jpg",
   },
   {
     title: "FMCG & Packaging",
@@ -81,7 +81,7 @@ export const industries = [
       "Production rejects",
     ],
     color: "#344e41",
-    imageUrl: "/industries/fmcg-scrap.webp",
+    imageUrl: "/industries/fmcg-scrap.jpg",
   },
   {
     title: "Food & Beverage",
@@ -94,7 +94,7 @@ export const industries = [
       "Industrial kitchen waste",
     ],
     color: "#588157",
-    imageUrl: "/industries/food-scrap.webp",
+    imageUrl: "/industries/food-scrap.jpg",
   },
   {
     title: "Chemical & Petrochemical",
@@ -106,7 +106,7 @@ export const industries = [
       "Drum cleaning",
     ],
     color: "#3a5a40",
-    imageUrl: "/industries/chemical-scrap.webp",
+    imageUrl: "/industries/chemical-scrap.jpg",
   },
   {
     title: "Steel & Metal Processing",
@@ -118,7 +118,7 @@ export const industries = [
       "Equipment dismantling",
     ],
     color: "#344e41",
-    imageUrl: "/industries/metal-scrap.webp",
+    imageUrl: "/industries/metal-scrap.jpg",
   },
   {
     title: "Construction & Infrastructure",
@@ -130,7 +130,7 @@ export const industries = [
       "Bulk waste handling",
     ],
     color: "#588157",
-    imageUrl: "/industries/construction-scrap.webp",
+    imageUrl: "/industries/construction-scrap.jpg",
   },
   {
     title: "Agriculture & Agro-Processing",
