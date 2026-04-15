@@ -110,13 +110,9 @@ const Navbar = () => {
                   width={64}
                   height={64}
                   priority
-                  className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 object-contain"
+                  className="h-24 w-24 sm:h-24 sm:w-24 md:h-28 md:w-28 object-contain"
                 />
               </motion.div>
-              {/* Logo text - visible on all screen sizes */}
-              <span className="font-bold text-xs sm:text-sm md:text-base text-gray-900 truncate">
-                Enviro Polymers
-              </span>
             </Link>
           </motion.div>
 
