@@ -8,12 +8,12 @@ export const industries = [
   {
     title: "Pharmaceutical & Healthcare",
     description:
-      "Comprehensive waste management for expired medicines, lab waste, hazardous chemicals, and packaging materials with strict PCB compliance.",
+      "End-to-end compliant waste management solutions for pharmaceuticals, laboratories, and healthcare facilities ensuring safety, traceability, and environmental responsibility.",
     services: [
-      "Hazardous chemical waste disposal",
-      "Expired medication recycling",
-      "Laboratory waste management",
-      "Medical packaging waste",
+      "Hazardous chemical waste handling",
+      "Expired drug destruction & recovery",
+      "Laboratory waste disposal",
+      "Medical packaging recycling",
     ],
     color: "#588157",
     imageUrl: "/industries/pharmaceutical-scrap.jpg",
@@ -21,12 +21,12 @@ export const industries = [
   {
     title: "Textile & Garment",
     description:
-      "Cotton waste, synthetic fibers, fabric offcuts, dye waste and packaging materials recycled responsibly with zero-landfill commitment.",
+      "Sustainable recycling solutions for textile manufacturers, minimizing landfill waste while maximizing material recovery and reuse.",
     services: [
-      "Fabric scraps & offcuts",
-      "Cotton & synthetic waste",
-      "Dye & chemical waste",
-      "Packaging materials",
+      "Fabric scraps & cutting waste",
+      "Cotton & synthetic fiber recycling",
+      "Dye & process waste management",
+      "Packaging material recovery",
     ],
     color: "#3a5a40",
     imageUrl: "/industries/textile-scrap.jpg",
@@ -34,12 +34,12 @@ export const industries = [
   {
     title: "Paint & Coating",
     description:
-      "Safe handling of expired paints, solvents, coating residues, contaminated containers and hazardous waste streams.",
+      "Specialized disposal and recycling of paints, coatings, and solvents with strict adherence to environmental safety standards.",
     services: [
       "Expired paint disposal",
-      "Solvent recycling",
-      "Coating residue management",
-      "Contaminated drum cleaning",
+      "Solvent recovery & reuse",
+      "Coating sludge management",
+      "Contaminated container cleaning",
     ],
     color: "#344e41",
     imageUrl: "/industries/paint-scrap.jpg",
@@ -47,12 +47,12 @@ export const industries = [
   {
     title: "Electronics & Electrical",
     description:
-      "E-waste recycling, component recovery, battery disposal and dismantling services.",
+      "Responsible e-waste management with advanced recovery processes to extract valuable materials and ensure safe disposal.",
     services: [
-      "E-waste recycling",
-      "Battery disposal",
-      "Component recovery",
-      "Production line waste",
+      "E-waste collection & recycling",
+      "Battery disposal & handling",
+      "Electronic component recovery",
+      "Manufacturing scrap management",
     ],
     color: "#588157",
     imageUrl: "/industries/electronics-scrap.jpg",
@@ -60,12 +60,12 @@ export const industries = [
   {
     title: "Automotive & Manufacturing",
     description:
-      "Metal scrap, rubber waste, production offcuts and oil disposal.",
+      "Efficient scrap management solutions for automotive and industrial manufacturing units, improving sustainability and cost recovery.",
     services: [
-      "Metal scrap recycling",
-      "Rubber & tyre waste",
-      "Used oil re-refining",
-      "Production line scrap",
+      "Metal scrap processing",
+      "Rubber & tyre recycling",
+      "Used oil recycling",
+      "Production scrap handling",
     ],
     color: "#3a5a40",
     imageUrl: "/industries/automotive-scrap.jpg",
@@ -73,12 +73,12 @@ export const industries = [
   {
     title: "FMCG & Packaging",
     description:
-      "Plastic packaging, multilayer plastics, cardboard waste and bulk handling.",
+      "Scalable waste management systems for FMCG brands focusing on packaging recovery and EPR compliance.",
     services: [
-      "Plastic packaging waste",
-      "EPR compliance support",
-      "Cardboard & paper waste",
-      "Production rejects",
+      "Plastic packaging recycling",
+      "EPR compliance management",
+      "Paper & cardboard recovery",
+      "Production reject handling",
     ],
     color: "#344e41",
     imageUrl: "/industries/fmcg-scrap.jpg",
@@ -86,72 +86,77 @@ export const industries = [
   {
     title: "Food & Beverage",
     description:
-      "Organic waste composting, glass recycling and packaging waste solutions.",
+      "Eco-friendly waste solutions for food industries including organic waste processing and packaging recycling.",
     services: [
       "Organic waste composting",
       "Glass & bottle recycling",
-      "Food packaging waste",
-      "Industrial kitchen waste",
+      "Food-grade packaging recovery",
+      "Commercial kitchen waste handling",
     ],
     color: "#588157",
     imageUrl: "/industries/food-scrap.jpg",
   },
   {
     title: "Chemical & Petrochemical",
-    description: "Hazardous chemical disposal and scheduled waste handling.",
+    description:
+      "Advanced hazardous waste handling solutions designed for chemical industries with strict regulatory compliance.",
     services: [
-      "Hazardous chemical waste",
-      "Contaminated materials",
-      "Scheduled waste handling",
-      "Drum cleaning",
+      "Hazardous waste disposal",
+      "Contaminated material handling",
+      "Scheduled waste processing",
+      "Industrial drum cleaning",
     ],
     color: "#3a5a40",
     imageUrl: "/industries/chemical-scrap.jpg",
   },
   {
     title: "Steel & Metal Processing",
-    description: "Ferrous & non-ferrous scrap and production waste recycling.",
+    description:
+      "Optimized metal scrap recovery systems for steel plants and metal processors ensuring maximum material value extraction.",
     services: [
-      "Metal scrap buying",
-      "Production offcuts",
-      "Metal dust & slag",
-      "Equipment dismantling",
+      "Ferrous & non-ferrous scrap",
+      "Production offcut recycling",
+      "Metal dust & slag handling",
+      "Industrial dismantling",
     ],
     color: "#344e41",
     imageUrl: "/industries/metal-scrap.jpg",
   },
   {
     title: "Construction & Infrastructure",
-    description: "Construction debris, metal scrap and bulk waste handling.",
+    description:
+      "Bulk waste handling and recycling solutions for construction projects focusing on material recovery and sustainability.",
     services: [
-      "Wooden pallet recycling",
-      "Construction debris",
-      "Metal structure scrap",
-      "Bulk waste handling",
+      "Wood & pallet recycling",
+      "Construction debris management",
+      "Structural metal scrap",
+      "Bulk waste logistics",
     ],
     color: "#588157",
     imageUrl: "/industries/construction-scrap.jpg",
   },
   {
     title: "Agriculture & Agro-Processing",
-    description: "Organic waste, plastic mulch and farm waste management.",
+    description:
+      "Sustainable waste solutions for agricultural operations, reducing environmental impact and improving resource efficiency.",
     services: [
-      "Organic waste recycling",
-      "Plastic mulch disposal",
-      "Agricultural packaging",
-      "Wooden crate buying",
+      "Organic waste processing",
+      "Plastic mulch recycling",
+      "Agro packaging disposal",
+      "Wooden crate recovery",
     ],
     color: "#3a5a40",
     imageUrl: "/industries/agriculture.webp",
   },
   {
     title: "IT & Technology Parks",
-    description: "Office e-waste, battery disposal and waste audits.",
+    description:
+      "Smart waste management systems for corporate offices and tech parks with a focus on e-waste and sustainability audits.",
     services: [
       "Office e-waste recycling",
-      "Battery disposal",
+      "Battery disposal solutions",
       "Paper waste management",
-      "Waste audits",
+      "Waste audit & reporting",
     ],
     color: "#344e41",
     imageUrl: "/industries/tech.webp",
@@ -182,9 +187,9 @@ export default function IndustriesPage() {
         <div className="absolute inset-0 bg-black/30" />
 
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl font-bold mb-4">Industries We Serve</h1>
+          <h1 className="text-5xl font-bold mb-4">Industries We Partner With</h1>
           <p className="text-lg text-white/80">
-            Tailored solutions for every industry
+            Smart, scalable, and sustainable solutions for modern industries
           </p>
         </div>
       </section>
