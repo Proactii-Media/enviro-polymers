@@ -61,7 +61,7 @@ const ServiceCard = ({
       onMouseLeave={() => setIsHovered(false)}
       className="relative group rounded-xl overflow-hidden border transition-all duration-300 shadow-sm hover:shadow-2xl cursor-pointer h-full"
       style={{
-        backgroundColor: isHovered ? "#588157" : "rgba(255, 255, 255, 0.7)",
+        backgroundColor: isHovered ? "#189944" : "rgba(255, 255, 255, 0.7)",
         borderColor: isHovered ? "#3a5a40" : "rgba(88, 129, 87, 0.2)",
       }}
     >

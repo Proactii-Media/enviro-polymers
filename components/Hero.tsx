@@ -177,7 +177,7 @@ const Hero = () => {
           >
             <Link
               href="/contact"
-              className="px-8 py-3 bg-emerald-500 text-white rounded-xl font-semibold hover:bg-emerald-400 transition"
+              className="px-8 py-3 bg-[#189944] text-white rounded-xl font-semibold hover:bg-emerald-400 transition"
             >
               Get a Free Quote
             </Link>
@@ -217,7 +217,7 @@ const Hero = () => {
                 whileHover="hover"
                 className="text-center p-6 rounded-xl border bg-white shadow-sm"
               >
-                <p className="text-5xl font-bold text-green-700 mb-3">
+                <p className="text-5xl font-bold text-[#024b86] mb-3">
                   <CountUpNumber target={stat.value} isVisible={statsVisible} />
                   +
                 </p>

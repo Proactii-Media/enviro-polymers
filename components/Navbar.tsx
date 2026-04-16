@@ -110,7 +110,7 @@ const Navbar = () => {
                   width={64}
                   height={64}
                   priority
-                  className="h-24 w-24 sm:h-24 sm:w-24 md:h-28 md:w-28 object-contain"
+                  className="h-28 w-28 object-contain"
                 />
               </motion.div>
             </Link>

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import ServiceCard from "./ServiceCard";
+import Link from "next/link";
 
 interface ServiceData {
   id: string;
@@ -118,8 +119,7 @@ const ServicePreview = () => {
             <span
               className="bg-clip-text text-transparent"
               style={{
-                backgroundImage:
-                  "linear-gradient(90deg, #588157 0%, #a3b18a 100%)",
+                backgroundImage: "linear-gradient(90deg, #189944 100%)",
               }}
             >
               Solutions
@@ -174,37 +174,22 @@ const ServicePreview = () => {
             Need a specific solution? Let's discuss your requirements!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <Link
+              href="/contact"
               className="px-8 py-3 font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-2xl text-white"
-              style={{
-                backgroundImage:
-                  "linear-gradient(135deg, #588157 0%, #3a5a40 100%)",
-              }}
             >
-              Get Quotation
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 font-semibold rounded-lg transition-all duration-300 border-2"
-              style={{
-                borderColor: "#588157",
-                color: "#344e41",
-                backgroundColor: "rgba(163, 177, 138, 0.12)",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor =
-                  "rgba(88, 129, 87, 0.15)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor =
-                  "rgba(163, 177, 138, 0.12)";
-              }}
-            >
-              View Catalog
-            </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-2xl text-white"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(135deg, #588157 0%, #3a5a40 100%)",
+                }}
+              >
+                Get Quotation
+              </motion.button>
+            </Link>
           </div>
         </motion.div>
       </div>

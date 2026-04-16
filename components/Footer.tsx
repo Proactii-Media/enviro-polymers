@@ -72,7 +72,7 @@ const Footer = () => {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(135deg, #344e41 0%, #3a5a40 50%, #588157 100%)",
+              "linear-gradient(135deg, #344e41 0%, #3a5a40 25%, #189944 100%)",
           }}
         />
       </div>
@@ -87,18 +87,24 @@ const Footer = () => {
         >
           {/* Brand */}
           <motion.div variants={itemVariants}>
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <Image
-                src="/Enviro polymers-01.svg"
-                alt="Enviro Polymers"
-                width={44}
-                height={44}
-                className="h-11 w-11 rounded-lg bg-amber-50 p-1.5 object-contain"
-              />
-              <span className="font-bold text-lg text-amber-50">
-                Enviro Polymers
-              </span>
+            <Link href="/" className="flex items-center mb-4">
+              <div
+                className="h-28 w-28 p-2 rounded-xl backdrop-blur-md border shadow-md flex items-center justify-center overflow-hidden"
+                style={{
+                  background: "#ffffff",
+                  borderColor: "rgba(255, 255, 255, 0.15)",
+                }}
+              >
+                <Image
+                  src="/Enviro polymers-01.svg"
+                  alt="Enviro Polymers"
+                  width={140} // increase size
+                  height={140}
+                  className="object-contain scale-110" // slightly zoom inside box
+                />
+              </div>
             </Link>
+
             <p className="text-sm text-amber-50/80 mb-4">
               Sustainable plastic solutions for industries worldwide.
             </p>
@@ -161,9 +167,10 @@ const Footer = () => {
         >
           <p>&copy; {currentYear} Enviro Polymers. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Terms of Service</Link>
-            <Link href="#">Cookie Policy</Link>
+            <p>
+              Driving eco-friendly recycling with safety and compliance at the
+              core.
+            </p>
           </div>
         </motion.div>
       </div>
