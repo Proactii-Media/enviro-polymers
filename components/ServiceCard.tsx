@@ -310,11 +310,11 @@ const ServiceCard = ({
             whileTap={{ scale: 0.98 }}
             className="w-full px-4 py-2.5 rounded-lg font-semibold text-sm transition-all border flex items-center justify-center gap-2"
             style={{
-              color: isHovered ? "#588157" : "#ffffff",
+              color: isHovered ? "#1a9a44" : "#ffffff",
               backgroundColor: isHovered
                 ? "rgba(255, 255, 255, 0.9)"
-                : "#588157",
-              borderColor: isHovered ? "rgba(255, 255, 255, 0.5)" : "#588157",
+                : "#1a9a44",
+              borderColor: isHovered ? "rgba(255, 255, 255, 0.5)" : "#1a9a44",
             }}
           >
             Explore

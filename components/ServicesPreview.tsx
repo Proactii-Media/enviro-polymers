@@ -184,7 +184,7 @@ const ServicePreview = () => {
                 className="px-8 py-3 font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-2xl text-white"
                 style={{
                   backgroundImage:
-                    "linear-gradient(135deg, #588157 0%, #3a5a40 100%)",
+                    "linear-gradient(135deg, #1a9a44 0%, #3a5a40 100%)",
                 }}
               >
                 Get Quotation

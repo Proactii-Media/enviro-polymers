@@ -504,9 +504,9 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {contactMethods.map((method, index) => {
               const bgColors = [
-                "linear-gradient(135deg, #588157 0%, #3a5a40 100%)",
-                "linear-gradient(135deg, #588157 0%, #3a5a40 100%)",
-                "linear-gradient(135deg, #588157 0%, #3a5a40 100%)",
+                "linear-gradient(135deg, #024b86 0%, #02e1ed 100%)",
+                "linear-gradient(135deg, #024b86 0%, #02e1ed 100%)",
+                "linear-gradient(135deg, #024b86 0%, #02e1ed 100%)",
               ];
               return (
                 <motion.a
@@ -564,7 +564,7 @@ export default function ContactPage() {
                 <div className="mb-8">
                   <h2
                     className="text-3xl font-bold"
-                    style={{ color: "#344e41" }}
+                    style={{ color: "#1a9a44" }}
                   >
                     Send us a Message
                   </h2>
@@ -735,8 +735,8 @@ export default function ContactPage() {
                     className="w-full py-3 rounded-lg font-bold text-white transition-all duration-300 text-base uppercase tracking-wide"
                     style={{
                       background: isSubmitting
-                        ? "linear-gradient(135deg, #a3b18a 0%, #588157 100%)"
-                        : "linear-gradient(135deg, #588157 0%, #3a5a40 100%)",
+                        ? "linear-gradient(135deg, #a3b18a 0%, #1a9a44 100%)"
+                        : "linear-gradient(135deg, #1a9a44 0%, #3a5a40 100%)",
                     }}
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
@@ -837,7 +837,7 @@ export default function ContactPage() {
                 className="p-7 rounded-xl text-white text-center shadow-md backdrop-blur-sm"
                 style={{
                   background:
-                    "linear-gradient(135deg, #588157 0%, #3a5a40 100%)",
+                    "linear-gradient(135deg, #189944 0%, #3a5a40 100%)",
                 }}
               >
                 <p className="text-4xl font-bold mb-2">15+</p>
@@ -865,7 +865,7 @@ export default function ContactPage() {
               className="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6"
               style={{
                 backgroundColor: "rgba(88, 129, 87, 0.1)",
-                color: "#588157",
+                color: "#189944",
               }}
             >
               📍 Global Presence
@@ -875,7 +875,7 @@ export default function ContactPage() {
               className="text-4xl md:text-5xl font-bold mb-4"
               style={{ color: "#344e41" }}
             >
-              Our Offices <span style={{ color: "#588157" }}>Across India</span>
+              Our Offices <span style={{ color: "#189944" }}>Across India</span>
             </h2>
 
             <p className="text-base" style={{ color: "#556B4F" }}>
@@ -929,7 +929,7 @@ export default function ContactPage() {
             }}
             className="py-12 px-8 md:px-12 rounded-xl text-white text-center transition-all shadow-lg"
             style={{
-              background: "linear-gradient(135deg, #588157 0%, #3a5a40 100%)",
+              background: "linear-gradient(135deg,#189944 0%, #70ba40 100%)",
             }}
           >
             <motion.h2

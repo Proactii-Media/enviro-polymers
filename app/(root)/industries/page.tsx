@@ -187,7 +187,9 @@ export default function IndustriesPage() {
         <div className="absolute inset-0 bg-black/30" />
 
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl font-bold mb-4">Industries We Partner With</h1>
+          <h1 className="text-5xl font-bold mb-4">
+            Industries We Partner With
+          </h1>
           <p className="text-lg text-white/80">
             Smart, scalable, and sustainable solutions for modern industries
           </p>
@@ -203,7 +205,7 @@ export default function IndustriesPage() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               whileHover={{ y: -8 }}
-              className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl"
+              className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl border-b-4 border-[#1a9a44]"
             >
               {/* Image */}
               <div className="relative h-48 overflow-hidden">

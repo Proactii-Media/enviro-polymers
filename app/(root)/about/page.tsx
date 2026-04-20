@@ -2,7 +2,9 @@
 
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
-import { Leaf, Award, Users, Zap, Globe, Target } from "lucide-react";
+import { Award, Globe, Target } from "lucide-react";
+import WhyChooseUs from "@/components/Why-choose-us";
+import Image from "next/image";
 
 export default function AboutPage() {
   const containerVariants = {
@@ -30,42 +32,15 @@ export default function AboutPage() {
       icon: "📊",
       label: "Projects Completed",
       value: "500+",
-      color: "#588157",
+      color: "#1a9a44",
     },
-    { icon: "🌍", label: "Countries Served", value: "50+", color: "#a3b18a" },
-    { icon: "👥", label: "Team Members", value: "200+", color: "#3a5a40" },
+    { icon: "🌍", label: "Countries Served", value: "50+", color: "#1a9a44" },
+    { icon: "👥", label: "Team Members", value: "200+", color: "#1a9a44" },
     {
       icon: "⭐",
       label: "Client Satisfaction",
       value: "98%",
-      color: "#588157",
-    },
-  ];
-
-  const values = [
-    {
-      icon: Leaf,
-      title: "Sustainability",
-      description:
-        "We are committed to environmental responsibility and sustainable practices in every aspect of our operations.",
-    },
-    {
-      icon: Award,
-      title: "Excellence",
-      description:
-        "Quality is non-negotiable. We strive for excellence in every product we deliver and every service we provide.",
-    },
-    {
-      icon: Users,
-      title: "Partnership",
-      description:
-        "We believe in building long-term relationships with our clients based on trust, transparency, and mutual growth.",
-    },
-    {
-      icon: Zap,
-      title: "Innovation",
-      description:
-        "Continuous improvement and innovation drive us to develop better solutions for our customers.",
+      color: "#1a9a44",
     },
   ];
 
@@ -380,7 +355,7 @@ export default function AboutPage() {
                 style={{
                   backgroundColor: "rgba(255, 255, 255, 0.95)",
                   borderColor: "rgba(88, 129, 87, 0.15)",
-                  border: "2px solid",
+                  border: "1px solid #1a9a44",
                 }}
               >
                 <div className="text-5xl mb-4">{stat.icon}</div>
@@ -473,29 +448,15 @@ export default function AboutPage() {
             {/* Image Placeholder */}
             <motion.div
               variants={itemVariants}
-              className="rounded-xl overflow-hidden shadow-xl"
-              style={{
-                backgroundColor: "rgba(88, 129, 87, 0.1)",
-              }}
+              className="relative w-full h-96 rounded-xl overflow-hidden shadow-xl"
             >
-              <div
-                className="w-full h-96 flex items-center justify-center text-6xl relative group"
-                style={{
-                  background:
-                    "linear-gradient(135deg, rgba(88, 129, 87, 0.2) 0%, rgba(163, 177, 138, 0.1) 100%)",
-                }}
-              >
-                <motion.div
-                  animate={{
-                    scale: [1, 1.1, 1],
-                    rotate: [0, 5, -5, 0],
-                  }}
-                  transition={{ duration: 4, repeat: Infinity }}
-                  className="group-hover:scale-110 transition-transform"
-                >
-                  🏭
-                </motion.div>
-              </div>
+              <Image
+                src="/about.jpg"
+                alt="About us"
+                fill
+                className="object-cover"
+                priority
+              />
             </motion.div>
           </motion.div>
         </div>
@@ -523,8 +484,8 @@ export default function AboutPage() {
               className="p-8 rounded-xl backdrop-blur-sm"
               style={{
                 backgroundColor: "rgba(255, 255, 255, 0.95)",
-                borderColor: "rgba(88, 129, 87, 0.2)",
-                border: "2px solid",
+                borderColor: "#1a9a44",
+                border: "1px solid #1a9a44",
               }}
             >
               <div className="flex items-center mb-6">
@@ -551,8 +512,8 @@ export default function AboutPage() {
               className="p-8 rounded-xl backdrop-blur-sm"
               style={{
                 backgroundColor: "rgba(255, 255, 255, 0.95)",
-                borderColor: "rgba(88, 129, 87, 0.2)",
-                border: "2px solid",
+                borderColor: "#1a9a44",
+                border: "1px solid #1a9a44",
               }}
             >
               <div className="flex items-center mb-6">
@@ -576,76 +537,15 @@ export default function AboutPage() {
         </div>
       </motion.section>
 
-      {/* Core Values Section */}
+      {/* Why Choose Us Section */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="px-4 py-16 md:py-24 relative z-10"
+        className="relative z-10"
       >
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-center mb-14"
-          >
-            <motion.span
-              variants={itemVariants}
-              className="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6"
-              style={{
-                backgroundColor: "rgba(88, 129, 87, 0.1)",
-                color: "#588157",
-              }}
-            >
-              💡 Core Values
-            </motion.span>
-            <motion.h2
-              variants={itemVariants}
-              className="text-4xl md:text-5xl font-bold mb-4"
-              style={{ color: "#344e41" }}
-            >
-              What Drives Us <span style={{ color: "#588157" }}>Forward</span>
-            </motion.h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => {
-              const Icon = value.icon;
-              return (
-                <motion.div
-                  key={index}
-                  variants={itemVariants}
-                  whileHover={{ y: -8 }}
-                  className="p-6 rounded-xl backdrop-blur-sm group"
-                  style={{
-                    backgroundColor: "rgba(255, 255, 255, 0.95)",
-                    borderColor: "rgba(88, 129, 87, 0.2)",
-                    border: "2px solid",
-                  }}
-                >
-                  <div
-                    className="mb-4 p-3 rounded-lg inline-block group-hover:scale-110 transition-transform"
-                    style={{ backgroundColor: "rgba(88, 129, 87, 0.1)" }}
-                  >
-                    <Icon size={32} color="#588157" />
-                  </div>
-                  <h3
-                    className="text-xl font-bold mb-3"
-                    style={{ color: "#344e41" }}
-                  >
-                    {value.title}
-                  </h3>
-                  <p className="text-sm" style={{ color: "#556B4F" }}>
-                    {value.description}
-                  </p>
-                </motion.div>
-              );
-            })}
-          </div>
-        </div>
+        <WhyChooseUs />
       </motion.section>
 
       {/* Timeline Section */}
@@ -679,7 +579,7 @@ export default function AboutPage() {
               className="text-4xl md:text-5xl font-bold mb-4"
               style={{ color: "#344e41" }}
             >
-              Milestones in Our <span style={{ color: "#588157" }}>Growth</span>
+              Milestones in Our <span style={{ color: "#1a9a44" }}>Growth</span>
             </motion.h2>
           </motion.div>
 
@@ -698,7 +598,7 @@ export default function AboutPage() {
                   <div
                     className="w-6 h-6 rounded-full border-4 z-10"
                     style={{
-                      borderColor: "#588157",
+                      borderColor: "#1a9a44",
                       backgroundColor: "#a3b18a",
                     }}
                   />
@@ -717,12 +617,12 @@ export default function AboutPage() {
                     style={{
                       backgroundColor: "rgba(255, 255, 255, 0.95)",
                       borderColor: "rgba(88, 129, 87, 0.15)",
-                      border: "2px solid",
+                      border: "1px solid #1a9a44",
                     }}
                   >
                     <h3
                       className="text-2xl font-bold mb-2"
-                      style={{ color: "#588157" }}
+                      style={{ color: "#1a9a44" }}
                     >
                       {item.year}
                     </h3>
@@ -799,7 +699,7 @@ export default function AboutPage() {
                 style={{
                   backgroundColor: "rgba(255, 255, 255, 0.95)",
                   borderColor: "rgba(88, 129, 87, 0.15)",
-                  border: "2px solid",
+                  border: "1px solid #1a9a44",
                 }}
               >
                 <div
@@ -855,7 +755,7 @@ export default function AboutPage() {
               className="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6"
               style={{
                 backgroundColor: "rgba(88, 129, 87, 0.1)",
-                color: "#588157",
+                color: "#1a9a44",
               }}
             >
               🏆 Recognition
@@ -882,7 +782,7 @@ export default function AboutPage() {
                 style={{
                   backgroundColor: "rgba(255, 255, 255, 0.95)",
                   borderColor: "rgba(88, 129, 87, 0.2)",
-                  border: "2px solid",
+                  border: "1px solid #1a9a44",
                 }}
               >
                 <Award
@@ -902,101 +802,6 @@ export default function AboutPage() {
         </div>
       </motion.section>
 
-      {/* Why Choose Us Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="px-4 py-16 md:py-24 relative z-10"
-      >
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
-          >
-            {/* Image */}
-            <motion.div
-              variants={itemVariants}
-              className="rounded-xl overflow-hidden shadow-xl"
-              style={{
-                backgroundColor: "rgba(88, 129, 87, 0.1)",
-              }}
-            >
-              <div
-                className="w-full h-96 flex items-center justify-center text-6xl relative group"
-                style={{
-                  background:
-                    "linear-gradient(135deg, rgba(88, 129, 87, 0.2) 0%, rgba(163, 177, 138, 0.1) 100%)",
-                }}
-              >
-                <motion.div
-                  animate={{
-                    scale: [1, 1.1, 1],
-                  }}
-                  transition={{ duration: 4, repeat: Infinity }}
-                  className="group-hover:scale-110 transition-transform"
-                >
-                  🌱
-                </motion.div>
-              </div>
-            </motion.div>
-
-            {/* Content */}
-            <motion.div variants={itemVariants}>
-              <span
-                className="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6"
-                style={{
-                  backgroundColor: "rgba(88, 129, 87, 0.1)",
-                  color: "#588157",
-                }}
-              >
-                ✨ Why Choose Us
-              </span>
-              <h2
-                className="text-4xl md:text-5xl font-bold mb-6"
-                style={{ color: "#344e41" }}
-              >
-                The Environ Polymers Advantage
-              </h2>
-
-              <div className="space-y-4">
-                {[
-                  "Premium quality products meeting international standards",
-                  "Sustainable manufacturing with zero waste initiatives",
-                  "Dedicated customer support and technical assistance",
-                  "Competitive pricing with transparent cost structures",
-                  "Reliable supply chain with timely deliveries",
-                  "Continuous innovation and product development",
-                ].map((point, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    className="flex items-center gap-4"
-                  >
-                    <div
-                      className="w-6 h-6 rounded-full flex items-center justify-center shrink-0"
-                      style={{ backgroundColor: "#588157" }}
-                    >
-                      <span className="text-white text-sm">✓</span>
-                    </div>
-                    <p className="text-base" style={{ color: "#556B4F" }}>
-                      {point}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </motion.section>
-
       {/* Call to Action Section */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
@@ -1010,7 +815,7 @@ export default function AboutPage() {
             whileHover={{ scale: 1.02 }}
             className="py-12 px-8 md:px-16 rounded-xl text-white text-center transition-all shadow-lg"
             style={{
-              background: "linear-gradient(135deg, #588157 0%, #3a5a40 100%)",
+              background: "linear-gradient(135deg, #588157 0%, #1a9a44 100%)",
             }}
           >
             <motion.h2

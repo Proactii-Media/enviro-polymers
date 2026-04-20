@@ -24,54 +24,54 @@ const WhyChooseUs = ({
       title: "100% Sustainable",
       description:
         "Eco-friendly materials and processes that reduce carbon footprint without compromising quality.",
-      color: "#588157",
+      color: "#189944",
       bgColor: "rgba(88, 129, 87, 0.1)",
-      borderColor: "rgba(88, 129, 87, 0.2)",
+      borderColor: "#189944",
     },
     {
       icon: Award,
       title: "Premium Quality",
       description:
         "ISO certified production with rigorous quality control ensuring consistent excellence across all products.",
-      color: "#588157",
+      color: "#189944",
       bgColor: "rgba(88, 129, 87, 0.1)",
-      borderColor: "rgba(88, 129, 87, 0.2)",
+      borderColor: "#189944",
     },
     {
       icon: Zap,
       title: "Fast Delivery",
       description:
         "Pan-India logistics network ensuring prompt delivery of bulk orders with minimal lead time.",
-      color: "#588157",
+      color: "#189944",
       bgColor: "rgba(88, 129, 87, 0.1)",
-      borderColor: "rgba(88, 129, 87, 0.2)",
+      borderColor: "#189944",
     },
     {
       icon: Shield,
       title: "Reliable Partner",
       description:
         "Trusted by 500+ clients for over 15 years with proven track record of excellence and innovation.",
-      color: "#588157",
+      color: "#189944",
       bgColor: "rgba(88, 129, 87, 0.1)",
-      borderColor: "rgba(88, 129, 87, 0.2)",
+      borderColor: "#189944",
     },
     {
       icon: Droplet,
       title: "Custom Solutions",
       description:
         "Tailored formulations designed to meet your exact specifications and manufacturing requirements.",
-      color: "#588157",
+      color: "#189944",
       bgColor: "rgba(88, 129, 87, 0.1)",
-      borderColor: "rgba(88, 129, 87, 0.2)",
+      borderColor: "#189944",
     },
     {
       icon: TrendingUp,
       title: "Cost Effective",
       description:
         "Competitive pricing with bulk discounts and flexible ordering options for maximum value.",
-      color: "#588157",
+      color: "#189944",
       bgColor: "rgba(88, 129, 87, 0.1)",
-      borderColor: "rgba(88, 129, 87, 0.2)",
+      borderColor: "#189944",
     },
   ];
 

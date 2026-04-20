@@ -104,7 +104,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Image
+                <Image 
                   src="/Enviro polymers-01.svg"
                   alt="Enviro Polymers"
                   width={64}
