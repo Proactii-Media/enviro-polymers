@@ -103,7 +103,7 @@ const ServicePreview = () => {
                 borderColor: "rgba(88, 129, 87, 0.3)",
               }}
             >
-              Our Services
+              Our Products
             </span>
           </motion.div>
 

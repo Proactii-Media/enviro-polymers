@@ -23,15 +23,28 @@ const Navbar = () => {
   const services = [
     {
       id: "pp-granules",
-      icon: "🏭",
       title: "PP Granules Manufacturing",
       description: "Markandey Polymers",
     },
     {
-      icon: "📦",
       id: "raw-material",
       title: "Plastic Raw Material Supply",
       description: "AVH Polychem",
+    },
+    {
+      id: "hdpe-granules",
+      title: "HDPE Granules Manufacturing",
+      description: "Markandey Polymers",
+    },
+    {
+      id: "lldpe-granules",
+      title: "LLDPE Granules Manufacturing",
+      description: "Markandey Polymers",
+    },
+    {
+      id: "engineering-polymers",
+      title: "Engineering Polymers",
+      description: "Markandey Polymers",
     },
   ];
 
@@ -104,7 +117,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Image 
+                <Image
                   src="/Enviro polymers-01.svg"
                   alt="Enviro Polymers"
                   width={64}
@@ -155,7 +168,7 @@ const Navbar = () => {
                 </motion.li>
               ))}
 
-              {/* Services Dropdown */}
+              {/* Products Dropdown */}
               <motion.li
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -169,7 +182,7 @@ const Navbar = () => {
                     whileHover={{ scale: 1.05 }}
                     className="relative z-10"
                   >
-                    Services
+                    Products
                   </motion.span>
                   <motion.span
                     animate={{ rotate: hoveredItem === "services" ? 180 : 0 }}
@@ -210,12 +223,6 @@ const Navbar = () => {
                             >
                               <Link href={`/services/${service.id}`}>
                                 <div className="px-4 py-3 transition-colors duration-150 hover:bg-gray-100">
-                                  <motion.div
-                                    whileHover={{ scale: 1.2, rotate: 5 }}
-                                    className="text-lg mb-1"
-                                  >
-                                    {service.icon}
-                                  </motion.div>
                                   <h3 className="font-semibold text-sm text-gray-900 line-clamp-1">
                                     {service.title}
                                   </h3>

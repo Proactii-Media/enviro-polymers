@@ -5,6 +5,7 @@ import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { Phone, Mail } from "lucide-react";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -32,17 +33,38 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus("");
 
     try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      const response = await emailjs.send(
+        "service_cxdrw1u",
+        "template_qqezlmh",
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          reply_to: formData.email,
+        },
+        "gbVjSYrP-EZoBj7Jd",
+      );
+
+      console.log("SUCCESS:", response);
+
       setSubmitStatus("success");
-      setFormData({ name: "", email: "", phone: "", message: "" });
-      setTimeout(() => setSubmitStatus(""), 3000);
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
     } catch (error) {
+      console.error("FAILED:", error);
       setSubmitStatus("error");
-      setTimeout(() => setSubmitStatus(""), 3000);
     } finally {
       setIsSubmitting(false);
+      setTimeout(() => setSubmitStatus(""), 3000);
     }
   };
 
