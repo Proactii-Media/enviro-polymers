@@ -34,17 +34,17 @@ const Navbar = () => {
     {
       id: "hdpe-granules",
       title: "HDPE Granules Manufacturing",
-      description: "Markandey Polymers",
+      description: "Goverdhan Polygran PVT LTD",
     },
     {
       id: "lldpe-granules",
       title: "LLDPE Granules Manufacturing",
-      description: "Markandey Polymers",
+      description: "Goverdhan Polygran PVT LTD",
     },
     {
       id: "engineering-polymers",
       title: "Engineering Polymers",
-      description: "Markandey Polymers",
+      description: "Goverdhan Polygran PVT LTD",
     },
   ];
 
