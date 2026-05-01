@@ -423,9 +423,6 @@ const Navbar = () => {
                                   setIsOpen(false);
                                 }}
                               >
-                                <span className="text-base shrink-0">
-                                  {service.icon}
-                                </span>
                                 <div className="flex-1 min-w-0">
                                   <h3 className="font-semibold text-xs text-gray-900 line-clamp-1">
                                     {service.title}
