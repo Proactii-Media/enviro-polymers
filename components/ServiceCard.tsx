@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 
 interface ServiceCardProps {
   title: string;
