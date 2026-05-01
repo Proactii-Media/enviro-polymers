@@ -42,6 +42,10 @@ const Navbar = () => {
       title: "LLDPE Granules",
     },
     {
+      id: "lldpe-granules",
+      title: "LLDPE Granules Manufacturing",
+    },
+    {
       id: "engineering-polymers",
       title: "Engineering Polymers",
     },
