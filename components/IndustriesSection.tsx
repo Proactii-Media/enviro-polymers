@@ -130,7 +130,7 @@ const IndustriesSection = ({
     <section
       id="industries"
       ref={ref}
-      className="relative py-16 md:py-24 px-4 overflow-hidden"
+      className="relative py-6 md:py-12 px-4 overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">

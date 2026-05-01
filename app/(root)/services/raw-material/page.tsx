@@ -35,7 +35,6 @@ export default function PolymerPage() {
       {/* HERO */}
       <motion.section className="relative py-24 text-center text-white overflow-hidden">
         <div className="absolute inset-0">
-          {/* ZOOM EFFECT */}
           <motion.div
             animate={{ scale: [1, 1.15, 1] }}
             transition={{ duration: 12, repeat: Infinity }}
@@ -54,13 +53,12 @@ export default function PolymerPage() {
 
         <div className="relative z-10 px-4">
           <h1 className="text-5xl font-bold mb-6">
-            Polymer & Plastic Raw Material Supplier
+            Polymer & Plastic Raw Materials
           </h1>
 
           <p className="mb-8 text-lg max-w-2xl mx-auto">
-            Leading Plastic Raw Material Suppliers in India. Reliable,
-            customer-centric, and your one-stop solution for polymer
-            distribution.
+            High-quality plastic raw materials and recyclable solutions by
+            Enviro Polymers for industrial and commercial applications.
           </p>
 
           <div className="flex justify-center gap-4 flex-wrap">
@@ -68,38 +66,63 @@ export default function PolymerPage() {
               href="/contact"
               className="inline-flex items-center gap-2 px-8 py-4 bg-[#588157] rounded-xl"
             >
-              Get in Touch <ArrowRight size={18} />
+              Contact Now <ArrowRight size={18} />
             </Link>
-
-            <a
-              href="https://share.google/n0dn8IqR190LISALQ"
-              target="_blank"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#344e41] rounded-xl"
-            >
-              Visit Website <ExternalLink size={18} />
-            </a>
           </div>
         </div>
       </motion.section>
 
-      {/* ABOUT */}
+      {/* PLASTIC SCRAP SECTION */}
       <section className="max-w-6xl mx-auto px-4 py-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           className="bg-white/60 backdrop-blur-lg p-8 rounded-2xl shadow-lg border border-[#588157]/20"
         >
-          <h2 className="text-2xl font-bold mb-6 text-[#344e41]">
-            About AVH Polychem
-          </h2>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* LEFT CONTENT */}
+            <div>
+              <h2 className="text-2xl font-bold mb-6 text-[#344e41]">
+                Plastic Scrap
+              </h2>
 
-          <p className="text-gray-700 leading-relaxed">
-            We at AVH Polychem promise our customers that when it comes to the
-            business of distribution of polymers, we are reliable and
-            customer-centric. As a one-stop shop, we stand apart with dedicated
-            systems and resources, ensuring consistent quality and timely
-            delivery across India.
-          </p>
+              <p className="text-gray-700 leading-relaxed">
+                Plastic Scrap is one of the most widely used recyclable
+                materials in the industry. At Enviro Polymers, we offer a wide
+                range of plastic scrap suitable for various industrial
+                applications.
+              </p>
+
+              <p className="text-gray-700 leading-relaxed mt-4">
+                As a responsible organization, we strictly follow environmental
+                standards while processing and supplying recyclable plastic
+                scrap. Our materials are available at competitive prices in both
+                loose and bulk quantities.
+              </p>
+
+              <div className="mt-6">
+                <h3 className="font-semibold text-[#344e41] mb-3">
+                  Applications:
+                </h3>
+
+                <ul className="text-gray-700 space-y-2">
+                  <li>• Plastic Industry</li>
+                  <li>• Chemical Industry</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* RIGHT IMAGE */}
+            <div>
+              <Image
+                src="/scrap.jpg"
+                alt="Plastic Scrap"
+                width={500}
+                height={400}
+                className="w-full h-full object-cover rounded-xl"
+              />
+            </div>
+          </div>
         </motion.div>
       </section>
 
@@ -120,7 +143,6 @@ export default function PolymerPage() {
               }}
               className="bg-white rounded-xl overflow-hidden border border-[#588157]/20"
             >
-              {/* IMAGE */}
               <div className="relative h-44 overflow-hidden">
                 <Image
                   src={item.image}
@@ -130,7 +152,6 @@ export default function PolymerPage() {
                 />
               </div>
 
-              {/* TITLE */}
               <div className="p-5 text-center">
                 <h3 className="font-semibold text-[#344e41]">{item.title}</h3>
               </div>
@@ -147,21 +168,20 @@ export default function PolymerPage() {
           className="bg-[#588157]/10 border border-[#588157]/20 rounded-2xl py-10 px-6 max-w-3xl mx-auto"
         >
           <h3 className="text-2xl font-semibold text-[#344e41] mb-4">
-            Need detailed product specifications?
+            Need product details or bulk pricing?
           </h3>
 
           <p className="text-gray-600 mb-6">
-            Explore our complete range of polymer and plastic raw materials by
-            visiting our official website.
+            Get in touch with Enviro Polymers for complete specifications and
+            customized solutions.
           </p>
 
-          <a
-            href="https://share.google/n0dn8IqR190LISALQ"
-            target="_blank"
+          <Link
+            href="/contact"
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#588157] text-white rounded-lg"
           >
-            Visit Website <ExternalLink size={18} />
-          </a>
+            Contact Now <ArrowRight size={18} />
+          </Link>
         </motion.div>
       </section>
     </div>

@@ -150,7 +150,7 @@ As one of India's trusted HDPE granule manufacturers and suppliers, we serve bus
             {/* IMAGE */}
             <div className="relative h-[250px] md:h-full w-full">
               <Image
-                src="/services/why.webp"
+                src="/services/why.jpg"
                 alt="HDPE Quality"
                 fill
                 className="object-cover"

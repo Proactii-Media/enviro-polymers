@@ -44,93 +44,13 @@ export default function AboutPage() {
     },
   ];
 
-  const timeline = [
-    {
-      year: "2009",
-      title: "Company Founded",
-      description:
-        "Environ Polymers was established with a vision to revolutionize the plastic manufacturing industry through sustainable practices.",
-    },
-    {
-      year: "2012",
-      title: "First Export",
-      description:
-        "Successfully exported our premium plastic granules to international markets, marking our global expansion.",
-    },
-    {
-      year: "2015",
-      title: "ISO Certification",
-      description:
-        "Achieved ISO 9001:2015 certification, demonstrating our commitment to quality management standards.",
-    },
-    {
-      year: "2018",
-      title: "Recycling Initiative",
-      description:
-        "Launched our comprehensive plastic recycling program, processing over 1000 tonnes annually.",
-    },
-    {
-      year: "2021",
-      title: "Regional Expansion",
-      description:
-        "Expanded operations to 6 major cities across India, strengthening our market presence.",
-    },
-    {
-      year: "2024",
-      title: "Technology Upgrade",
-      description:
-        "Invested in cutting-edge technology for better quality control and increased production capacity.",
-    },
+  const vision = [
+    "To provide high-quality plastic granules and scrap materials at competitive prices ",
+    "To promote eco-friendly practices by converting plastic waste into reusable resources ",
+    "To build long-term relationships with customers through reliability and transparency ",
+    "To continuously improve processes and adopt advanced recycling technologies ",
+    "To contribute to a cleaner and more sustainable environment",
   ];
-
-  const team = [
-    {
-      name: "Rajesh Kumar",
-      position: "Founder & CEO",
-      experience: "25+ years in plastics industry",
-      image: "👨‍💼",
-    },
-    {
-      name: "Priya Singh",
-      position: "Chief Operations Officer",
-      experience: "20+ years in operations management",
-      image: "👩‍💼",
-    },
-    {
-      name: "Amit Patel",
-      position: "Head of Quality Assurance",
-      experience: "18+ years in quality control",
-      image: "👨‍💼",
-    },
-    {
-      name: "Neha Sharma",
-      position: "Head of Sales & Marketing",
-      experience: "16+ years in sales and business development",
-      image: "👩‍💼",
-    },
-    {
-      name: "Vikram Reddy",
-      position: "Technical Director",
-      experience: "22+ years in technical innovation",
-      image: "👨‍💼",
-    },
-    {
-      name: "Anjali Verma",
-      position: "Sustainability Manager",
-      experience: "14+ years in environmental management",
-      image: "👩‍💼",
-    },
-  ];
-
-  const achievements = [
-    "ISO 9001:2015 Certified",
-    "Best Plastic Supplier Award 2023",
-    "Environmental Excellence Recognition",
-    "Client Retention Rate: 95%+",
-    "Zero Waste Initiative",
-    "Industry Leadership Award",
-  ];
-
   // CountUpNumber Component
   const CountUpNumber = ({
     target,
@@ -259,7 +179,7 @@ export default function AboutPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 py-24 md:py-32 overflow-hidden"
+        className="relative z-10 px-4 py-16 md:py-20py-16 md:py-20 overflow-hidden"
       >
         {/* Background Image with Zoom Effect */}
         <motion.div
@@ -267,7 +187,7 @@ export default function AboutPage() {
           transition={{ duration: 5, repeat: Infinity }}
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: "url('/aboutImg.jpg')",
+            backgroundImage: "url('/aboutt.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             transformOrigin: "center",
@@ -284,7 +204,7 @@ export default function AboutPage() {
         />
 
         {/* Content */}
-        <div className="relative z-[2] px-4 py-16 md:py-24">
+        <div className="relative z-[2] px-4 py-16 md:py-20">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -301,7 +221,7 @@ export default function AboutPage() {
                   border: "1px solid rgba(255, 255, 255, 0.3)",
                 }}
               >
-                🌿 About Our Company
+                🌿About Enviro Polymers
               </span>
             </motion.div>
 
@@ -317,9 +237,10 @@ export default function AboutPage() {
               variants={itemVariants}
               className="text-lg md:text-xl text-white/95 drop-shadow-md max-w-3xl mx-auto"
             >
-              For over 15 years, Environ Polymers has been at the forefront of
-              sustainable plastic manufacturing, delivering premium quality
-              solutions while protecting our planet for future generations.
+              Enviro Polymers is a trusted name in plastic recycling and raw
+              material supply, delivering high-quality polymer solutions since
+              2009. We specialize in premium PP, HDPE, and LLDPE granules along
+              with plastic scrap for diverse manufacturing industries.
             </motion.p>
           </motion.div>
         </div>
@@ -384,7 +305,7 @@ export default function AboutPage() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="px-4 py-16 md:py-24 relative z-10"
+        className="px-4 py-2 md:py-2 relative z-10"
       >
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -403,46 +324,35 @@ export default function AboutPage() {
                   color: "#588157",
                 }}
               >
-                📖 Our Journey
+                📖 About Us
               </span>
               <h2
                 className="text-4xl md:text-5xl font-bold mb-6"
                 style={{ color: "#344e41" }}
               >
-                Transforming the Plastics Industry
+                Building Sustainable Polymer Solutions
               </h2>
               <p
                 className="text-base md:text-lg mb-4 leading-relaxed"
                 style={{ color: "#556B4F" }}
               >
-                Founded in 2009, Environ Polymers emerged from a simple yet
-                powerful vision: to revolutionize the plastic manufacturing
-                industry by combining quality excellence with environmental
-                responsibility. What started as a small operation has grown into
-                a leading supplier of premium plastic granules, serving over 500
-                clients across 50 countries.
+                Enviro Polymers has been actively serving the plastic recycling
+                and raw material industry since 2009, operating under the Enviro
+                Polymers brand from 2026. With strong industry expertise, we
+                specialize in supplying premium-grade PP granules, HDPE
+                granules, LLDPE granules, and plastic scrap to a wide range of
+                manufacturing sectors.
               </p>
               <p
                 className="text-base md:text-lg mb-6 leading-relaxed"
                 style={{ color: "#556B4F" }}
               >
-                Our journey has been defined by unwavering commitment to
-                sustainability, continuous innovation, and building lasting
-                partnerships with our clients. We don&apos;t just manufacture
-                plastic granules; we create solutions that support sustainable
-                manufacturing practices worldwide.
+                Our core strength lies in transforming plastic waste into
+                valuable reusable resources. Through efficient sourcing, strict
+                quality control, and deep market understanding, we ensure
+                consistent material performance while supporting industries with
+                cost-effective and sustainable solutions.
               </p>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 rounded-lg font-bold text-white transition-all"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #588157 0%, #3a5a40 100%)",
-                }}
-              >
-                Learn More
-              </motion.button>
             </motion.div>
 
             {/* Image Placeholder */}
@@ -462,13 +372,12 @@ export default function AboutPage() {
         </div>
       </motion.section>
 
-      {/* Mission & Vision Section */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="px-4 py-16 md:py-24 relative z-10"
+        className="px-2 py-4 md:py-12 relative z-10"
       >
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -476,63 +385,115 @@ export default function AboutPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8"
+            className="grid grid-cols-1 gap-8"
           >
-            {/* Mission */}
+            {/* Vision*/}
             <motion.div
               variants={itemVariants}
               className="p-8 rounded-xl backdrop-blur-sm"
               style={{
                 backgroundColor: "rgba(255, 255, 255, 0.95)",
-                borderColor: "#1a9a44",
                 border: "1px solid #1a9a44",
               }}
             >
-              <div className="flex items-center mb-6">
+              <div className="flex items-center mb-">
                 <Target size={40} color="#588157" className="mr-4" />
-                <h3 className="text-2xl font-bold" style={{ color: "#344e41" }}>
-                  Our Mission
-                </h3>
-              </div>
-              <p
-                className="text-base leading-relaxed"
-                style={{ color: "#556B4F" }}
-              >
-                To be the most trusted and sustainable supplier of premium
-                plastic granules globally, enabling manufacturers to produce
-                high-quality products while minimizing environmental impact. We
-                are committed to delivering excellence, innovation, and
-                reliability in every interaction with our clients.
-              </p>
-            </motion.div>
-
-            {/* Vision */}
-            <motion.div
-              variants={itemVariants}
-              className="p-8 rounded-xl backdrop-blur-sm"
-              style={{
-                backgroundColor: "rgba(255, 255, 255, 0.95)",
-                borderColor: "#1a9a44",
-                border: "1px solid #1a9a44",
-              }}
-            >
-              <div className="flex items-center mb-6">
-                <Globe size={40} color="#588157" className="mr-4" />
                 <h3 className="text-2xl font-bold" style={{ color: "#344e41" }}>
                   Our Vision
                 </h3>
               </div>
+
               <p
-                className="text-base leading-relaxed"
+                className="text-base md:text-lg leading-relaxed max-w-4xl"
                 style={{ color: "#556B4F" }}
               >
-                To create a world where sustainable plastic manufacturing is the
-                standard, not the exception. We envision a future where our
-                innovations help industries reduce waste, optimize resources,
-                and build a circular economy that benefits both business and the
-                environment.
+                To become a leading and trusted supplier of recycled and raw
+                polymer materials in India and global markets, recognized for
+                sustainability, quality, and innovation in plastic recycling
+                solutions.
               </p>
             </motion.div>
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* Our Mission */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="px-4 py-2 md:py-2 relative z-10"
+      >
+        <div className="max-w-6xl mx-auto">
+          {/* Heading */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-center mb-14"
+          >
+            <motion.span
+              variants={itemVariants}
+              className="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6"
+              style={{
+                backgroundColor: "rgba(88, 129, 87, 0.1)",
+                color: "#588157",
+              }}
+            >
+              🌍 Our Misson
+            </motion.span>
+
+            <motion.h2
+              variants={itemVariants}
+              className="text-4xl md:text-5xl font-bold mb-4"
+              style={{ color: "#344e41" }}
+            >
+              Our <span style={{ color: "#1a9a44" }}>Mission</span>
+            </motion.h2>
+          </motion.div>
+
+          {/* Vision Points */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          >
+            {vision.map((item, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -6 }}
+                className="p-6 rounded-xl backdrop-blur-sm flex items-start gap-4 transition-all"
+                style={{
+                  backgroundColor: "rgba(255, 255, 255, 0.95)",
+                  border: "1px solid #1a9a44",
+                }}
+              >
+                {/* Tick Icon */}
+                <div
+                  className="min-w-[32px] h-[32px] flex items-center justify-center rounded-full text-white font-bold"
+                  style={{ backgroundColor: "#1a9a44" }}
+                >
+                  ✔
+                </div>
+
+                {/* Text */}
+                <p
+                  className="text-base leading-relaxed"
+                  style={{ color: "#556B4F" }}
+                >
+                  {item}
+                </p>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </motion.section>
@@ -546,260 +507,6 @@ export default function AboutPage() {
         className="relative z-10"
       >
         <WhyChooseUs />
-      </motion.section>
-
-      {/* Timeline Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="px-4 py-16 md:py-24 relative z-10"
-      >
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-center mb-14"
-          >
-            <motion.span
-              variants={itemVariants}
-              className="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6"
-              style={{
-                backgroundColor: "rgba(88, 129, 87, 0.1)",
-                color: "#588157",
-              }}
-            >
-              ⏱️ Our Timeline
-            </motion.span>
-            <motion.h2
-              variants={itemVariants}
-              className="text-4xl md:text-5xl font-bold mb-4"
-              style={{ color: "#344e41" }}
-            >
-              Milestones in Our <span style={{ color: "#1a9a44" }}>Growth</span>
-            </motion.h2>
-          </motion.div>
-
-          <div className="space-y-6">
-            {timeline.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="flex gap-6 md:gap-12 items-start"
-              >
-                {/* Timeline dot and line */}
-                <div className="flex flex-col items-center">
-                  <div
-                    className="w-6 h-6 rounded-full border-4 z-10"
-                    style={{
-                      borderColor: "#1a9a44",
-                      backgroundColor: "#a3b18a",
-                    }}
-                  />
-                  {index !== timeline.length - 1 && (
-                    <div
-                      className="w-1 h-24 md:h-32"
-                      style={{ backgroundColor: "rgba(88, 129, 87, 0.2)" }}
-                    />
-                  )}
-                </div>
-
-                {/* Content */}
-                <div className="flex-1 pt-1 pb-6 md:pb-12">
-                  <div
-                    className="p-6 rounded-xl backdrop-blur-sm"
-                    style={{
-                      backgroundColor: "rgba(255, 255, 255, 0.95)",
-                      borderColor: "rgba(88, 129, 87, 0.15)",
-                      border: "1px solid #1a9a44",
-                    }}
-                  >
-                    <h3
-                      className="text-2xl font-bold mb-2"
-                      style={{ color: "#1a9a44" }}
-                    >
-                      {item.year}
-                    </h3>
-                    <h4
-                      className="text-lg font-semibold mb-2"
-                      style={{ color: "#344e41" }}
-                    >
-                      {item.title}
-                    </h4>
-                    <p className="text-sm" style={{ color: "#556B4F" }}>
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </motion.section>
-
-      {/* Team Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="px-4 py-16 md:py-24 relative z-10"
-      >
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-center mb-14"
-          >
-            <motion.span
-              variants={itemVariants}
-              className="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6"
-              style={{
-                backgroundColor: "rgba(88, 129, 87, 0.1)",
-                color: "#588157",
-              }}
-            >
-              👥 Leadership Team
-            </motion.span>
-            <motion.h2
-              variants={itemVariants}
-              className="text-4xl md:text-5xl font-bold mb-4"
-              style={{ color: "#344e41" }}
-            >
-              Meet Our <span style={{ color: "#588157" }}>Experts</span>
-            </motion.h2>
-            <motion.p
-              variants={itemVariants}
-              className="text-base md:text-lg"
-              style={{ color: "#556B4F" }}
-            >
-              Our leadership team brings decades of combined experience in the
-              plastics industry
-            </motion.p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -8 }}
-                className="rounded-xl overflow-hidden backdrop-blur-sm group"
-                style={{
-                  backgroundColor: "rgba(255, 255, 255, 0.95)",
-                  borderColor: "rgba(88, 129, 87, 0.15)",
-                  border: "1px solid #1a9a44",
-                }}
-              >
-                <div
-                  className="h-48 flex items-center justify-center text-7xl group-hover:scale-110 transition-transform"
-                  style={{
-                    background:
-                      "linear-gradient(135deg, rgba(88, 129, 87, 0.1) 0%, rgba(163, 177, 138, 0.05) 100%)",
-                  }}
-                >
-                  {member.image}
-                </div>
-                <div className="p-6">
-                  <h3
-                    className="text-xl font-bold mb-2"
-                    style={{ color: "#344e41" }}
-                  >
-                    {member.name}
-                  </h3>
-                  <p
-                    className="font-semibold mb-2"
-                    style={{ color: "#588157" }}
-                  >
-                    {member.position}
-                  </p>
-                  <p className="text-sm" style={{ color: "#556B4F" }}>
-                    {member.experience}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </motion.section>
-
-      {/* Achievements Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="px-4 py-16 md:py-24 relative z-10"
-      >
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-center mb-14"
-          >
-            <motion.span
-              variants={itemVariants}
-              className="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-6"
-              style={{
-                backgroundColor: "rgba(88, 129, 87, 0.1)",
-                color: "#1a9a44",
-              }}
-            >
-              🏆 Recognition
-            </motion.span>
-            <motion.h2
-              variants={itemVariants}
-              className="text-4xl md:text-5xl font-bold mb-4"
-              style={{ color: "#344e41" }}
-            >
-              Awards & <span style={{ color: "#588157" }}>Achievements</span>
-            </motion.h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {achievements.map((achievement, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.1 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-                className="p-6 rounded-xl backdrop-blur-sm text-center group"
-                style={{
-                  backgroundColor: "rgba(255, 255, 255, 0.95)",
-                  borderColor: "rgba(88, 129, 87, 0.2)",
-                  border: "1px solid #1a9a44",
-                }}
-              >
-                <Award
-                  size={48}
-                  color="#588157"
-                  className="mx-auto mb-4 group-hover:rotate-12 transition-transform"
-                />
-                <p
-                  className="font-semibold text-lg"
-                  style={{ color: "#344e41" }}
-                >
-                  {achievement}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
       </motion.section>
 
       {/* Call to Action Section */}

@@ -11,15 +11,18 @@ const Footer = () => {
   const quickLinks = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
-    { label: "PP Granules", href: "/services/pp-granules" },
     { label: "Clients", href: "/clients" },
-    { label: "Industries", href: "/#industries" },
+    { label: "Industries", href: "/industries" },
     { label: "FAQs", href: "/faqs" },
   ];
 
-  const services = [
-    { label: "PP Granules Manufacturing", href: "/services/pp-granules" },
-    { label: "Plastic Raw Material Supply", href: "/services/raw-material" },
+  const products = [
+    { label: "PP Granules", href: "/services/pp-granules" },
+    { label: "Plastic Raw Material", href: "/services/raw-material" },
+    { label: "HDPE Granules", href: "/services/hdpe-granules" },
+    { label: "LLDPE Granules", href: "/services/lldpe-granules" },
+    { label: "LDPE Granules", href: "/services/ldpe-granules" },
+    { label: "Engineering Polymers", href: "/services/engineering-polymers" },
   ];
 
   const contactInfo = [
@@ -126,14 +129,14 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* Services */}
+          {/* Products */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-lg font-bold mb-4 text-amber-50">Services</h3>
+            <h3 className="text-lg font-bold mb-4 text-amber-50">Products</h3>
             <ul className="space-y-2">
-              {services.map((service, idx) => (
+              {products.map((product, idx) => (
                 <li key={idx}>
-                  <Link href={service.href} className="text-amber-50/70">
-                    {service.label}
+                  <Link href={product.href} className="text-amber-50/70">
+                    {product.label}
                   </Link>
                 </li>
               ))}

@@ -162,7 +162,7 @@ Our commitment to quality, precision, and client satisfaction makes us a dependa
             {/* IMAGE (RIGHT SIDE) */}
             <div className="relative h-[250px] md:h-full w-full">
               <Image
-                src="/services/why.webp"
+                src="/services/why.jpg"
                 alt="Engineering Polymer Quality"
                 fill
                 className="object-cover"

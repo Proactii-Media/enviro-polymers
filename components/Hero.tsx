@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
+/* ---------------- COUNT UP ---------------- */
 const CountUpNumber = ({
   target,
   duration = 2,
@@ -37,10 +38,39 @@ const CountUpNumber = ({
   return <span>{count}</span>;
 };
 
+/* ---------------- HERO ---------------- */
 const Hero = () => {
   const [statsVisible, setStatsVisible] = useState(false);
   const statsRef = useRef<HTMLDivElement>(null);
 
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  /* -------- SLIDES -------- */
+  const slides = [
+    {
+      image: "/homeImg.webp",
+      tagline: "Recycling Today for a Better Tomorrow",
+    },
+    {
+      image: "/granules.webp",
+      tagline: "High-Quality Plastic Raw Materials",
+    },
+    {
+      image: "/aboutt.jpg",
+      tagline: "Turning Plastic Waste into Value",
+    },
+  ];
+
+  /* -------- AUTO SLIDER -------- */
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  /* -------- STATS VISIBILITY -------- */
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -49,7 +79,7 @@ const Hero = () => {
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.5 },
+      { threshold: 0.3 },
     );
 
     if (statsRef.current) {
@@ -59,6 +89,7 @@ const Hero = () => {
     return () => observer.disconnect();
   }, []);
 
+  /* -------- ANIMATIONS -------- */
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -75,7 +106,7 @@ const Hero = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" as const },
+      transition: { duration: 0.8 },
     },
   };
 
@@ -87,111 +118,73 @@ const Hero = () => {
       transition: { duration: 0.6 },
     },
     hover: {
-      y: -8,
+      y: -6,
       transition: { duration: 0.3 },
     },
   };
 
   return (
     <>
-      {/* Hero Section */}
+      {/* ================= HERO ================= */}
       <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-        {/* Background Image with Animation */}
-        <div className="absolute inset-0 overflow-hidden">
-          <motion.div
-            initial={{ scale: 1 }}
-            animate={{ scale: 1.08 }}
-            transition={{
-              duration: 10,
-              ease: "easeInOut" as const,
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
-            whileHover={{ scale: 1.12 }}
-            className="w-full h-full"
-          >
-            <Image
-              src="/homeImg.webp"
-              alt="Industrial polymer manufacturing"
-              fill
-              priority
-              className="object-cover"
-              sizes="100vw"
-            />
-          </motion.div>
+        {/* -------- SLIDER BACKGROUND -------- */}
+        <div className="absolute inset-0">
+          {slides.map((slide, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: index === currentSlide ? 1 : 0 }}
+              transition={{ duration: 1 }}
+              className="absolute inset-0"
+            >
+              <Image
+                src={slide.image}
+                alt="Enviro Polymers"
+                fill
+                className="object-cover"
+                priority={index === 0}
+              />
+            </motion.div>
+          ))}
 
-          {/* Lighter Overlay */}
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/60" />
-
-          {/* Glow Effects */}
-          <div className="absolute inset-0 opacity-30 [background:radial-gradient(circle_at_20%_20%,rgba(16,185,129,0.35),transparent_45%)]" />
-          <div className="absolute inset-0 opacity-25 [background:radial-gradient(circle_at_80%_30%,rgba(163,177,138,0.35),transparent_40%)]" />
+          {/* Overlays */}
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/70" />
         </div>
 
-        {/* Content */}
+        {/* -------- CONTENT -------- */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="container-custom text-center relative z-10"
+          className="container-custom text-center relative z-10 px-4"
         >
+          {/* Brand */}
           <motion.span
             variants={itemVariants}
-            className="inline-block px-5 py-2.5 rounded-full text-sm font-semibold border backdrop-blur-lg mb-6"
+            className="inline-block px-5 py-2 rounded-full text-xs md:text-sm border backdrop-blur-md mb-6 text-white/90"
             style={{
-              backgroundColor: "rgba(163, 177, 138, 0.25)",
-              color: "#fff",
-              borderColor: "rgba(88, 129, 87, 0.5)",
+              backgroundColor: "rgba(255,255,255,0.08)",
+              borderColor: "rgba(255,255,255,0.2)",
             }}
           >
-            🌿 Sustainable Plastic Solutions
+            Enviro Polymers
           </motion.span>
 
+          {/* Tagline */}
           <motion.h1
-            variants={itemVariants}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white"
+            key={currentSlide}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-3xl md:text-5xl lg:text-6xl font-semibold text-white max-w-3xl mx-auto leading-snug"
           >
-            Premium Quality
+            {slides[currentSlide].tagline}
           </motion.h1>
-
-          <motion.h2
-            variants={itemVariants}
-            className="text-2xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-green-300 via-white to-green-500 bg-clip-text text-transparent"
-          >
-            Plastic Raw Materials
-          </motion.h2>
-
-          <motion.p
-            variants={itemVariants}
-            className="text-lg text-white/80 max-w-2xl mx-auto mb-8"
-          >
-            Trusted supplier of high-quality PP and CP plastic granules for
-            manufacturing industries worldwide. Committed to sustainability and
-            excellence.
-          </motion.p>
-
-          <motion.div
-            variants={itemVariants}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-          >
-            <Link
-              href="/contact"
-              className="px-8 py-3 bg-[#189944] text-white rounded-xl font-semibold hover:bg-emerald-400 transition"
-            >
-              Get a Free Quote
-            </Link>
-            <Link
-              href="/services/pp-granules"
-              className="px-8 py-3 border border-white/30 text-white rounded-xl hover:bg-white/10 transition"
-            >
-              Explore Services
-            </Link>
-          </motion.div>
         </motion.div>
       </section>
 
-      {/* Stats Section */}
+      {/* ================= STATS ================= */}
       <section className="bg-white py-20">
         <motion.div
           ref={statsRef}
@@ -204,24 +197,35 @@ const Hero = () => {
             Our Impact & Excellence
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { value: 15, label: "Years of Excellence" },
-              { value: 500, label: "Satisfied Clients" },
-              { value: 3000, label: "Tonnes Recycled" },
-              { value: 50, label: "Countries Served" },
+              { value: 15, label: "Years of Experience", icon: "🏆" },
+              { value: 100, label: "Industries Served", icon: "🏭" },
+              { value: 1000, label: "Orders Delivered", icon: "📦" },
+              {
+                value: 100,
+                label: "Sustainable Focus",
+                icon: "♻️",
+                suffix: "%",
+              },
             ].map((stat, index) => (
               <motion.div
                 key={index}
                 variants={statCardVariants}
                 whileHover="hover"
-                className="text-center p-6 rounded-xl border bg-white shadow-sm"
+                className="group p-8 rounded-2xl border shadow-md hover:shadow-2xl transition"
+                style={{ borderColor: "#1a9a44" }}
               >
-                <p className="text-5xl font-bold text-[#024b86] mb-3">
+                <div className="text-4xl mb-4">{stat.icon}</div>
+
+                <p className="text-4xl font-bold mb-2 text-[#1a9a44]">
                   <CountUpNumber target={stat.value} isVisible={statsVisible} />
-                  +
+                  {stat.suffix ? stat.suffix : "+"}
                 </p>
-                <p className="font-semibold text-green-900">{stat.label}</p>
+
+                <p className="text-gray-700 font-semibold text-sm">
+                  {stat.label}
+                </p>
               </motion.div>
             ))}
           </div>

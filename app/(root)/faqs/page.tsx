@@ -126,7 +126,7 @@ export default function FAQPage() {
             transition={{ duration: 12, repeat: Infinity }}
             className="absolute inset-0"
           >
-            <Image src="/faqImg.jpg" alt="FAQ" fill className="object-cover" />
+            <Image src="/faqs.webp" alt="FAQ" fill className="object-cover" />
           </motion.div>
 
           <div className="absolute inset-0 bg-black/60" />

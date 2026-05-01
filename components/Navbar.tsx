@@ -23,28 +23,27 @@ const Navbar = () => {
   const services = [
     {
       id: "pp-granules",
-      title: "PP Granules Manufacturing",
-      description: "Markandey Polymers",
+      title: "PP Granules",
     },
     {
       id: "raw-material",
-      title: "Plastic Raw Material Supply",
-      description: "AVH Polychem",
+      title: "Plastic Raw Material",
     },
     {
       id: "hdpe-granules",
-      title: "HDPE Granules Manufacturing",
-      description: "Markandey Polymers",
+      title: "HDPE Granules ",
+    },
+    {
+      id: "ldpe-granules",
+      title: "LDPE Granules",
     },
     {
       id: "lldpe-granules",
-      title: "LLDPE Granules Manufacturing",
-      description: "Markandey Polymers",
+      title: "LLDPE Granules",
     },
     {
       id: "engineering-polymers",
       title: "Engineering Polymers",
-      description: "Markandey Polymers",
     },
   ];
 
@@ -226,9 +225,6 @@ const Navbar = () => {
                                   <h3 className="font-semibold text-sm text-gray-900 line-clamp-1">
                                     {service.title}
                                   </h3>
-                                  <p className="text-xs text-gray-600 line-clamp-1 mt-1">
-                                    {service.description}
-                                  </p>
                                 </div>
                               </Link>
                             </motion.div>
@@ -427,9 +423,6 @@ const Navbar = () => {
                                   <h3 className="font-semibold text-xs text-gray-900 line-clamp-1">
                                     {service.title}
                                   </h3>
-                                  <p className="text-xs text-gray-600 line-clamp-1">
-                                    {service.description}
-                                  </p>
                                 </div>
                               </Link>
                             </motion.div>
