@@ -226,27 +226,6 @@ const ServiceCard = ({
 
       {/* Content */}
       <div className="relative p-6 z-10 h-full flex flex-col">
-        {/* Icon */}
-        <motion.div
-          variants={iconVariants}
-          className="mb-4 inline-flex p-3 rounded-lg transition-all border w-fit"
-          style={{
-            backgroundColor: isHovered
-              ? "rgba(255, 255, 255, 0.15)"
-              : "rgba(163, 177, 138, 0.15)",
-            borderColor: isHovered
-              ? "rgba(255, 255, 255, 0.3)"
-              : "rgba(88, 129, 87, 0.25)",
-          }}
-        >
-          <div
-            className="text-3xl"
-            style={{ color: isHovered ? "#ffffff" : "inherit" }}
-          >
-            {icon}
-          </div>
-        </motion.div>
-
         {/* Title */}
         <motion.h3
           className="text-lg font-bold mb-2 transition-all duration-300"
