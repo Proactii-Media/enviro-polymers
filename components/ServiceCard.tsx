@@ -5,7 +5,6 @@ import Link from "next/link";
 import { ReactNode, useState } from "react";
 
 interface ServiceCardProps {
-  icon: ReactNode;
   title: string;
   description: string;
   features: string[];
@@ -15,12 +14,10 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({
-  icon,
   title,
   description,
   features,
   index,
-  link,
   serviceId,
 }: ServiceCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
