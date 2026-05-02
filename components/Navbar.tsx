@@ -111,13 +111,13 @@ const Navbar = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="flex items-center gap-2 min-w-0"
           >
-            <Link href="/" className="flex items-center gap-2 shrink-0">
+            <Link href="/" className="flex items-center gap-2 shrink-0 ">
               <motion.div
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <Image
-                  src="/Enviro polymers-01.svg"
+                  src="/enviro-polymers-01.svg"
                   alt="Enviro Polymers"
                   width={120}
                   height={120}
