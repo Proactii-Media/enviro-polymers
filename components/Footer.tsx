@@ -42,7 +42,7 @@ const Footer = () => {
       icon: MapPin,
       label: "Location",
       value:
-        "Unit-1, Plot no: 14, Evershine Industrial Park Vapi Nashik Road, Karwad Vapi, India",
+        "Survey No 542/1, Plot No 32, Karvad Road, Karvad Vapi, Valsad- 396191, Gujarat",
       href: "#",
     },
   ];
@@ -101,9 +101,9 @@ const Footer = () => {
                 <Image
                   src="/enviro-polymers-01.svg"
                   alt="Enviro Polymers"
-                  width={140} // increase size
+                  width={140}
                   height={140}
-                  className="object-contain scale-110" // slightly zoom inside box
+                  className="object-contain scale-110"
                 />
               </div>
             </Link>
