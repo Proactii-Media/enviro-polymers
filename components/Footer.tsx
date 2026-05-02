@@ -29,8 +29,14 @@ const Footer = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 (973) 777-6666",
-      href: "tel:+919737776666",
+      value: "+91 9070205050",
+      href: "tel:+919070205050",
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: "+91 98257 30001",
+      href: "tel:+919825730001",
     },
     {
       icon: Mail,
