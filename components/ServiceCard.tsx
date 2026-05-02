@@ -39,14 +39,6 @@ const ServiceCard = ({
     },
   };
 
-  const iconVariants = {
-    hover: {
-      scale: 1.15,
-      rotate: 10,
-      transition: { duration: 0.3 },
-    },
-  };
-
   return (
     <motion.div
       variants={cardVariants}
