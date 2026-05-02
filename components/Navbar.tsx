@@ -87,7 +87,7 @@ const Navbar = () => {
 
   return (
     <header
-      className="fixed inset-x-0 top-0 z-50 transition-all duration-300"
+      className="fixed inset-x-0 top-0 z-50 transition-all duration-300 overflow-visible"
       style={{
         backgroundColor: scrolled
           ? "rgba(255, 255, 255, 0.7)"
@@ -103,7 +103,7 @@ const Navbar = () => {
       }}
     >
       <nav className="mx-auto w-full px-3 sm:px-4 md:px-6 lg:max-w-7xl lg:mx-auto lg:px-8">
-        <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
+        <div className="flex items-center justify-between h-16 sm:h-18 md:h-20">
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -111,18 +111,19 @@ const Navbar = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="flex items-center gap-2 min-w-0"
           >
-            <Link href="/" className="flex items-center gap-2 shrink-0 ">
+            <Link href="/" className="flex items-center gap-2 shrink-0">
               <motion.div
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
+                className="relative"
               >
                 <Image
                   src="/enviro-polymers-01.svg"
                   alt="Enviro Polymers"
-                  width={120}
-                  height={120}
+                  width={200}
+                  height={200}
                   priority
-                  className="h-32 w-32 object-contain"
+                  className="h-32 md:h-36 w-auto object-contain -my-8"
                 />
               </motion.div>
             </Link>
