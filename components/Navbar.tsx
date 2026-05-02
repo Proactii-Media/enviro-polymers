@@ -119,10 +119,10 @@ const Navbar = () => {
                 <Image
                   src="/Enviro polymers-01.svg"
                   alt="Enviro Polymers"
-                  width={64}
-                  height={64}
+                  width={120}
+                  height={120}
                   priority
-                  className="h-34 w-34 object-contain"
+                  className="h-32 w-32 object-contain"
                 />
               </motion.div>
             </Link>
