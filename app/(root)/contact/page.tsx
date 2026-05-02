@@ -878,7 +878,7 @@ export default function ContactPage() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="px-4 py-16 md:py-24 relative z-10"
+        className="px-2 py-4 md:py-6 relative z-10"
       >
         <div className="max-w-7xl mx-auto">
           {/* Heading */}

@@ -111,7 +111,7 @@ Our materials are trusted across industries for producing packaging films, plast
             {/* IMAGE */}
             <div className="relative h-full min-h-[300px] rounded-xl overflow-hidden">
               <Image
-                src="/services/lldp.jpeg"
+                src="/services/lldp.webp"
                 alt="LLDPE Granules"
                 fill
                 className="object-cover"

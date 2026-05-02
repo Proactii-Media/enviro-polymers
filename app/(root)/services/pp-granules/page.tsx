@@ -111,9 +111,7 @@ Plastics are easier to fabricate than metal components and require less energy a
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Left Content */}
             <div>
-              <h2 className="text-2xl font-bold mb-6 text-[#344e41]">
-                Our Product
-              </h2>
+              <h2 className="text-2xl font-bold text-[#344e41]">Our Product</h2>
 
               <p className="text-gray-700 leading-relaxed whitespace-pre-line">
                 {content}
@@ -200,22 +198,37 @@ Plastics are easier to fabricate than metal components and require less energy a
       {/* PRODUCTION */}
       <section className="max-w-6xl mx-auto px-4 pb-20">
         <div className="bg-white/60 backdrop-blur-lg p-8 rounded-2xl shadow-lg border border-[#588157]/20">
-          <h2 className="text-2xl font-bold mb-6 text-[#344e41]">
-            Production Process
-          </h2>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* LEFT IMAGE */}
+            <div className="relative h-[280px] md:h-full rounded-xl overflow-hidden">
+              <Image
+                src="/services/production.jpg"
+                alt="Production Process"
+                fill
+                className="object-cover"
+              />
+            </div>
 
-          <p className="text-gray-700 leading-relaxed">
-            Our plant is equipped with advanced machinery ensuring efficiency
-            and consistency in production. Equipment is regularly maintained to
-            meet high-quality standards.
-          </p>
+            {/* RIGHT CONTENT */}
+            <div>
+              <h2 className="text-2xl font-bold mb-6 text-[#344e41]">
+                Production Process
+              </h2>
 
-          <ul className="mt-6 text-gray-700 space-y-2">
-            <li>• Exceptional quality granules</li>
-            <li>• Precision processing</li>
-            <li>• High durability</li>
-            <li>• Consistent performance</li>
-          </ul>
+              <p className="text-gray-700 leading-relaxed">
+                Our plant is equipped with advanced machinery ensuring
+                efficiency and consistency in production. Equipment is regularly
+                maintained to meet high-quality standards.
+              </p>
+
+              <ul className="mt-6 text-gray-700 space-y-2">
+                <li>• Exceptional quality granules</li>
+                <li>• Precision processing</li>
+                <li>• High durability</li>
+                <li>• Consistent performance</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 

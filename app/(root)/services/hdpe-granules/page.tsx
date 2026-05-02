@@ -52,7 +52,6 @@ As one of India's trusted HDPE granule manufacturers and suppliers, we serve bus
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-[#f0f7f4] via-[#e6f3f0] to-[#dceef0]" />
       </div>
-
       {/* HERO */}
       <motion.section className="relative py-24 text-center text-white overflow-hidden">
         <div className="absolute inset-0">
@@ -89,7 +88,6 @@ As one of India's trusted HDPE granule manufacturers and suppliers, we serve bus
           </Link>
         </div>
       </motion.section>
-
       {/* ABOUT SECTION */}
       <section className="max-w-6xl mx-auto px-4 py-20">
         <motion.div
@@ -133,12 +131,27 @@ As one of India's trusted HDPE granule manufacturers and suppliers, we serve bus
             Industrial Overview of HDPE Granules
           </h2>
 
-          <p className="text-gray-700 leading-relaxed whitespace-pre-line">
-            {overviewContent}
-          </p>
+          {/* GRID FIX */}
+          <div className="grid md:grid-cols-[1fr_420px] gap-6 items-start">
+            {/* TEXT */}
+            <div>
+              <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                {overviewContent}
+              </p>
+            </div>
+
+            {/* IMAGE */}
+            <div className="relative w-full h-64 md:h-full min-h-[220px]">
+              <Image
+                src="/services/production.jpg"
+                alt="HDPE Granules Industrial Overview"
+                fill
+                className="rounded-xl object-cover shadow-md"
+              />
+            </div>
+          </div>
         </motion.div>
       </section>
-
       {/* WHY CHOOSE US */}
       <section className="max-w-6xl mx-auto px-4 pb-24">
         <motion.div

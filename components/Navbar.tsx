@@ -42,10 +42,6 @@ const Navbar = () => {
       title: "LLDPE Granules",
     },
     {
-      id: "lldpe-granules",
-      title: "LLDPE Granules Manufacturing",
-    },
-    {
       id: "engineering-polymers",
       title: "Engineering Polymers",
     },
@@ -126,7 +122,7 @@ const Navbar = () => {
                   width={64}
                   height={64}
                   priority
-                  className="h-28 w-28 object-contain"
+                  className="h-34 w-34 object-contain"
                 />
               </motion.div>
             </Link>
