@@ -152,6 +152,7 @@ As one of India's trusted HDPE granule manufacturers and suppliers, we serve bus
           </div>
         </motion.div>
       </section>
+
       {/* WHY CHOOSE US */}
       <section className="max-w-6xl mx-auto px-4 pb-24">
         <motion.div
@@ -163,7 +164,7 @@ As one of India's trusted HDPE granule manufacturers and suppliers, we serve bus
             {/* IMAGE */}
             <div className="relative h-[250px] md:h-full w-full">
               <Image
-                src="/services/why.jpg"
+                src="/whyy.webp"
                 alt="HDPE Quality"
                 fill
                 className="object-cover"

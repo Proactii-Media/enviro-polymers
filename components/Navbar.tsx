@@ -384,7 +384,7 @@ const Navbar = () => {
                       onClick={() => setIsServicesOpen(!isServicesOpen)}
                       className="w-full text-left px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100 active:bg-gray-200 transition-colors flex items-center justify-between"
                     >
-                      <span>Services</span>
+                      <span>Products</span>
                       <motion.span
                         animate={{ rotate: isServicesOpen ? 180 : 0 }}
                         transition={{ duration: 0.3 }}

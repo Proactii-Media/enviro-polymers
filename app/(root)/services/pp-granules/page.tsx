@@ -7,10 +7,6 @@ import Link from "next/link";
 
 export default function ServicePage() {
   const content = `
-Product Overview
-
-PP Granules
-
 Polypropylene (PP) Granules are a versatile thermoplastic polymer widely used across industries such as packaging, labeling, textiles, stationery, and reusable containers. At Enviro Polymers, our raw materials are processed using high-grade inputs and advanced machinery to ensure superior performance.
 
 Our PP Granules offer:
@@ -111,7 +107,7 @@ Plastics are easier to fabricate than metal components and require less energy a
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Left Content */}
             <div>
-              <h2 className="text-2xl font-bold text-[#344e41]">Our Product</h2>
+              <h2 className="text-2xl font-bold text-[#344e41]">PP Granules</h2>
 
               <p className="text-gray-700 leading-relaxed whitespace-pre-line">
                 {content}
