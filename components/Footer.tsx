@@ -99,7 +99,7 @@ const Footer = () => {
                 }}
               >
                 <Image
-                  src="/Enviro polymers-01.svg"
+                  src="/enviro-polymers-01.svg"
                   alt="Enviro Polymers"
                   width={140} // increase size
                   height={140}
