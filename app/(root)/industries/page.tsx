@@ -174,7 +174,7 @@ export default function IndustriesPage() {
           className="absolute inset-0"
         >
           <Image
-            src="/industriesImg.jpg"
+            src="/services/production.jpg"
             alt="Industries"
             fill
             className="object-cover"
